@@ -1,0 +1,108 @@
+.login {
+  background-color: #4680f3;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .card {
+    display: flex;
+    background-color: white;
+    width: 50%;
+    border-radius: 10px;
+    min-height: 500px;
+    min-width: 50%;
+    overflow: hidden;
+
+    .left {
+      flex: 1;
+      background: linear-gradient(
+          rgba(76, 129, 166, 0.7204),
+          rgba(76, 128, 166, 0.5)
+        ),
+        url("https://images.pexels.com/photos/3228727/pexels-photo-3228727.jpeg?auto=compress&cs=tinysrgb&w=1600")
+          center;
+      background-size: cover;
+      padding: 50px 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      color: white;
+      overflow: hidden;
+
+      h1 {
+        font-size: 80px;
+        line-height: 70px;
+      }
+      p {
+        font-size: 14px;
+        color: #c8d9fb;
+      }
+      span {
+        font-size: 15px;
+      }
+
+      button {
+        width: 40%;
+        padding: 10px;
+        border: none;
+        background-color: white;
+        color: #4680f3;
+        font-weight: 500;
+        font-style: 16px;
+        cursor: pointer;
+        border-radius: 10px;
+
+        &:hover {
+          font-weight: 600;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .right {
+      flex: 1;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 50px;
+
+      h1 {
+        color: #4680f3;
+        font-weight: 700;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        input {
+          border: none;
+          outline: none;
+          border-bottom: 1px solid lightblue;
+          padding: 20px 30px 8px 0px;
+          color: #4680f3;
+          font-weight: normal;
+        }
+
+        button {
+          width: 50%;
+          padding: 8px 4px;
+          border: none;
+          background-color: #e9f1ff;
+          font-size: 18px;
+          color: #4680f3;
+          cursor: pointer;
+          border-radius: 10px;
+          border: 1px solid #4680f3;
+
+          &:hover {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
